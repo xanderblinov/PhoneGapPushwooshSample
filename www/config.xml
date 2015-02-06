@@ -60,7 +60,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Third party plugins -->
-    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
+    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.4.5" />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
