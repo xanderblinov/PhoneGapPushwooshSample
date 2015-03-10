@@ -56,12 +56,12 @@ function onPushwooshAndroidInitialized(pushToken)
 }
 
 function initPushwoosh() {
-	console.log('initPushwoosh');
+	console.warn('initPushwoosh');
 	var pushNotification = window.plugins.pushNotification;
 	
-	console.log('registerPushwooshAndroid');
+	console.warn('registerPushwooshAndroid');
 	registerPushwooshAndroid();
-	console.log('onDeviceReady');
+	console.warn('onDeviceReady');
 	pushNotification.onDeviceReady({ projectid: "387050748417", appid : "A0443-C41F6" });
 }
 
