@@ -21,7 +21,7 @@ function registerPushwooshAndroid() {
 			  });
 
 	//projectid: "GOOGLE_PROJECT_ID", appid : "PUSHWOOSH_APP_ID"
-	pushNotification.registerDevice({ projectid: "387050748417", appid : "A0443-C41F6" },
+	pushNotification.registerDevice(
 									function(token) {
 										alert(token);
 										//callback when pushwoosh is ready
@@ -59,7 +59,7 @@ function initPushwoosh() {
 	var pushNotification = window.plugins.pushNotification;
 	
 	registerPushwooshAndroid();
-	pushNotification.onDeviceReady();
+	pushNotification.onDeviceReady({ projectid: "387050748417", appid : "A0443-C41F6" });
 }
 
  
